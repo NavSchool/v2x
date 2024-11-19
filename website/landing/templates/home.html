@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end landing page </title>
+    <link rel="stylesheet" href="{% static 'landing/styles.css' %}">
+</head>
+<body>
+<div class= "header">
+    <h1> WADE</h1>
+    <p>An AI powered chatbot for Aircraft manuals</p>
+    <div class="buttons">
+        <a href="#" class="button">TAKE ME TO CHAT</a>
+    </div>
+</div>
+
+<div class="information">
+    <div class="about">
+        <div class="content">
+            <div class="text">
+                <h2>About the Chatbot</h2>
+                <p>In collaboration with V2X, we have created a chatbot <br>
+                    trained on Pan Am aircraft manuals to assist aircraft technicians and spare them the time lost from  combing through their manuals.</p>
+            </div>
+            <div class="image-container">
+                <img src='{% static "polls/images/V2X_Responsibility-1.png" %}' alt="Mechanic working on engine">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
