@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <img src="images/v2x-logo.png" alt="V2X Logo" />
+        </div>
+        <div class="user-info">
+          <div class="user-logo">
+            <img src="images/user-icon.png" alt="User Icon" />
+          </div>
+          <div class="username">Username</div>
+        </div>
+        <button class="menu-button">Manual Reference</button>
+        <button class="menu-button" id="start-new-chat">
+          <img
+            src="images/chat-bubble.png"
+            alt="Chat Bubble"
+            class="button-icon"
+          />
+          Start a New Chat
+        </button>
+        <div class="previous-chats" id="previous-chats"></div>
+        <div class="sidebar-footer">
+          <a href="#" class="footer-icon">
+            <img src="images/settings-icon.png" alt="Settings" />
+          </a>
+          <a href="#" class="footer-icon">
+            <img src="images/v2x-logo-small.png" alt="V2X Logo" />
+          </a>
+          <a href="#" class="footer-icon">
+            <img src="images/question-icon.png" alt="Help" />
+          </a>
+        </div>
+      </div>
+      <div class="chat-area">
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-area">
+          <div class="input-container">
+            <input type="text" placeholder="Ask the chatbot here" />
+            <img
+              src="images/paper-clip.png"
+              alt="Attach"
+              class="paperclip-icon"
+            />
+          </div>
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
